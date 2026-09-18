@@ -384,6 +384,7 @@ function keyReleased() {
 }
 
 function mousePressed() {
+  userStartAudio();
   if (!bgMusic.isPlaying) {
     bgMusic.loop;
   }
