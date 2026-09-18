@@ -384,6 +384,9 @@ function keyReleased() {
 }
 
 function mousePressed() {
+  if (!bgMusic.isPlaying) {
+    bgMusic.loop;
+  }
   if (mouseButton === LEFT) {
     inputHeld[5] = true;
     inputPressTime[5] = millis();
